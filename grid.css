@@ -1,5 +1,5 @@
 /*add css clearing of some stuff*/
-html, body, div, h1, h2, h3, h4, h5, h6, p, a, ul, li, ol, table, td, th, tr, .general {
+html, body, div, h1, h2, h3, h4, h5, h6, p, a, ul, li, ol, table, td, th, tr, input, label, .general {
         margin: 0;
         padding: 0;
 }
@@ -112,6 +112,9 @@ all classes are spanned in one row*/
 [class*="col-"] {
         float: left;
         padding: 15px;
+}
+[class*="col-offset-"] {
+    border: 1px solid red;
 }
 
 .row::after {

@@ -1,3 +1,7 @@
+.header {
+    text-align: center;
+}
+
 a {
         text-decoration: none;
 }
@@ -27,7 +31,7 @@ Following code is for styling switch button
 
                 .onoffswitch {
                 position: relative; 
-                width: 90px;
+                width: 190px;
                 -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
                 display: block;
                 text-align: center; 
