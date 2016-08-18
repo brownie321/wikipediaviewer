@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia viewer</title>
+    <link rel="stylesheet" type="text/css" href="grid.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="code.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+<div class="row">
+    <div class="col-e-12">
+        <div class="row">   
+            <div class="col-e-12 col-offset-e-5 col-m-12 col-offset-m-5 onoffswitch">
+                <input type="checkbox" id="check" name="onoffswitch" class="onoffswitch-checkbox">
+                <label for="check" class="onoffswitch-label"> Live Search
+                      <span class="onoffswitch-inner"></span>
+                </label>
+            </div>
+            <div class="col-e-12 col-m-4 col-offset-m-4" id="form">
+                
+                    <input type="search" id="search" placeholder="Type to search" style="min-width: 70%">
+                    <input type="submit" value="submit" id="submit">
+                
+            </div>
+            <div class="col-e-12 col-m-4 col-offset-m-4 live" id="live">
+                <ul id="livesearch">
+                    <li><a>1</a></li>
+                    <li>2</li>
+                </ul>
+            </div>
+            <div id="results" class="col-e-12 col-l-6 col-offset-l-3">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

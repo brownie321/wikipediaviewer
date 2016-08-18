@@ -1,0 +1,121 @@
+/*add css clearing of some stuff*/
+html, body, div, h1, h2, h3, h4, h5, h6, p, a, ul, li, ol, table, td, th, tr, .general {
+        margin: 0;
+        padding: 0;
+}
+
+/*to make everything looks fine.Padding&border are
+included in the width of the element*/
+* {
+        box-sizing: border-box;
+}
+
+/*folliwing is a grid systemb by itself.
+It is devided into 12 columns with similar width*/
+
+/*as it is "mobile first" approach in a small window
+all classes are spanned in one row*/
+
+
+
+
+@media only screen and (min-width: 0) {
+    /* For phones: */
+    .col-e-1 {width: 8.33%;}
+    .col-e-2 {width: 16.66%;}
+    .col-e-3 {width: 25%;}
+    .col-e-4 {width: 33.33%;}
+    .col-e-5 {width: 41.66%;}
+    .col-e-6 {width: 50%;}
+    .col-e-7 {width: 58.33%;}
+    .col-e-8 {width: 66.66%;}
+    .col-e-9 {width: 75%;}
+    .col-e-10 {width: 83.33%;}
+    .col-e-11 {width: 91.66%;}
+    .col-e-12 {width: 100%;}
+
+    .col-offset-e-1 {margin-left: 8.33%;}
+        .col-offset-e-2 {margin-left: 16.66%;}
+        .col-offset-e-3 {margin-left: 25%;}
+        .col-offset-e-4 {margin-left: 33.33%;}
+        .col-offset-e-5 {margin-left: 41.66%;}
+        .col-offset-e-6 {margin-left: 50%;}
+        .col-offset-e-7 {margin-left: 58.33%;}
+        .col-offset-e-8 {margin-left: 66.66%;}
+        .col-offset-e-9 {margin-left: 75%;}
+        .col-offset-e-10 {margin-left: 83.33%;}
+        .col-offset-e-11 {margin-left: 91.66%;}
+        .col-offset-e-12 {margin-left: 100%;}
+}
+
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+    .col-offset-m-1 {margin-left: 8.33%;}
+        .col-offset-m-2 {margin-left: 16.66%;}
+        .col-offset-m-3 {margin-left: 25%;}
+        .col-offset-m-4 {margin-left: 33.33%;}
+        .col-offset-m-5 {margin-left: 41.66%;}
+        .col-offset-m-6 {margin-left: 50%;}
+        .col-offset-m-7 {margin-left: 58.33%;}
+        .col-offset-m-8 {margin-left: 66.66%;}
+        .col-offset-m-9 {margin-left: 75%;}
+        .col-offset-m-10 {margin-left: 83.33%;}
+        .col-offset-m-11 {margin-left: 91.66%;}
+        .col-offset-m-12 {margin-left: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-l-1 {width: 8.33%;}
+    .col-l-2 {width: 16.66%;}
+    .col-l-3 {width: 25%;}
+    .col-l-4 {width: 33.33%;}
+    .col-l-5 {width: 41.66%;}
+    .col-l-6 {width: 50%;}
+    .col-l-7 {width: 58.33%;}
+    .col-l-8 {width: 66.66%;}
+    .col-l-9 {width: 75%;}
+    .col-l-10 {width: 83.33%;}
+    .col-l-11 {width: 91.66%;}
+    .col-l-12 {width: 100%;}
+
+    .col-offset-l-1 {margin-left: 8.33%;}
+        .col-offset-l-2 {margin-left: 16.66%;}
+        .col-offset-l-3 {margin-left: 25%;}
+        .col-offset-l-4 {margin-left: 33.33%;}
+        .col-offset-l-5 {margin-left: 41.66%;}
+        .col-offset-l-6 {margin-left: 50%;}
+        .col-offset-l-7 {margin-left: 58.33%;}
+        .col-offset-l-8 {margin-left: 66.66%;}
+        .col-offset-l-9 {margin-left: 75%;}
+        .col-offset-l-10 {margin-left: 83.33%;}
+        .col-offset-l-11 {margin-left: 91.66%;}
+        .col-offset-l-12 {margin-left: 100%;}
+}
+
+
+
+[class*="col-"] {
+        float: left;
+        padding: 15px;
+}
+
+.row::after {
+        content: "";
+        clear: both;
+        display: block;
+}
